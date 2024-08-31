@@ -4,13 +4,40 @@ html{
 *, *:before, *:after{
     box-sizing: inherit;
 }
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
+}
+img {
+    max-width: 100px;
+}
+.nombre-sitio{
 
-
-h1{
-    font-size: 20px;
-    color:rgb(0 0 0/.5)
+    text-align: center;
+}
+.nombre-sitio span{
+    color: blue;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.contenedor-navegacion {
+    border-color: #e1e1e1;
+    border-style: solid;
+}
+.nav-principal {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
+.hero {
+    background-image: url(../img/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+}
 .sobre-nosotros{
     background-color: blueviolet;
     width: 200px;
@@ -18,3 +45,9 @@ h1{
     box-sizing: border-box;
 }
 
+/*categorias*/
+.listado-categorias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
