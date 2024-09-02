@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muebleria</title>
+    <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
     <header> <!--parte superior-->
@@ -22,18 +23,18 @@
     
     
     <div class="hero"></div>
-    <section class="contenedor">
+    <section class="contenedor categorias">
         <h2>Categoria de productos</h2>
         <div class="listado-categorias">
-            <div>
+            <div class="categoria">
                 <img src="img/categoria1.jpg" alt="Imagen Categoria"/>
                 <a href="">Oficina</a>
             </div>
-            <div>
+            <div class="categoria">
                 <img src="img/categoria2.jpg" alt="Imagen Categoria"/>
                 <a href="">Hogar</a>
             </div>
-            <div>
+            <div class="categoria">
                 <img src="img/categoria3.jpg" alt="Imagen Categoria"/>
                 <a href="">Cocina</a>
             </div>
@@ -41,44 +42,108 @@
     </section><!--categorias Producto-->
 
     <section class="sobre-nosotros">
-        <div>
-            <h2>Sobre Nosotros</h2>
-            <nav class="navegacion"> <!--grupo de enlaces-->
-                <a href="#">Nuestra Historia</a>
-                <a href="#">Mision, vision y valores</a>
-                <a href="#">Carreras</a>
-                <a href="#">Politicas de privacidad</a>
-                <a href="#">Terminos de servicio</a>
-            </nav>
-            <p>miajsndkasndjahfjwjkand</p>
+        <div class="contenedor sobre-nosotros-grid">
+            <div class="texto-nosotros">
+                <h3>Sobre Nosotros</h3>
+                <p>miajsndkasndjahfjwjkand</p>
+            </div>
         </div>
     </section>
 
-    <section>
-        <div>
-            <h2>Sobre Nosotros</h2>
-            <p>dgdfsdfdsfsdfsdfsdf</p>
-        </div>
-    </section>
-
-    <main> <!--parte mas inportante, Productos-->
+    <main class="contenedor contenido-principal"> <!--parte mas inportante, Productos-->
         <h2>Nuestros productos</h2>
-        <div>  
-            <div>
+        <div class="listado-productos">  
+            <div class="producto">
                 <img src="img/producto1.jpg" alt="Imagen Producto"/>
-                <div>
+                <div class="texto-producto">
                     <h3>Producto 1</h3>
                     <p>parrafo de el producto </p>
-                    <p>$10000</p>
-                    <button href="#">Agregar a carrito</button>
+                    <p class="precio">$10000</p>
+                    <a class="btn-carrito" href="#"> Agregar a carrito</a>
                 </div>  
             </div>
-            
+            <div class="producto">
+                <img src="img/producto2.jpg" alt="Imagen Producto"/>
+                <div class="texto-producto">
+                    <h3>Producto 2</h3>
+                    <p>parrafo de el producto </p>
+                    <p class="precio">$10000</p>
+                    <a class="btn-carrito" href="#"> Agregar a carrito</a>
+                </div>  
+            </div>
+            <div class="producto">
+                <img src="img/producto3.jpg" alt="Imagen Producto"/>
+                <div class="texto-producto">
+                    <h3>Producto 3</h3>
+                    <p>parrafo de el producto </p>
+                    <p class="precio">$10000</p>
+                    <a class="btn-carrito" href="#"> Agregar a carrito</a>
+                </div>  
+            </div>
+            <div class="producto">
+                <img src="img/producto4.jpg" alt="Imagen Producto"/>
+                <div class="texto-producto">
+                    <h3>Producto 4</h3>
+                    <p>parrafo de el producto </p>
+                    <p class="precio">$10000</p>
+                    <a class="btn-carrito" href="#"> Agregar a carrito</a>
+                </div>  
+            </div>
+            <div class="producto">
+                <img src="img/producto5.jpg" alt="Imagen Producto"/>
+                <div class="texto-producto">
+                    <h3>Producto 5</h3>
+                    <p>parrafo de el producto </p>
+                    <p class="precio">$10000</p>
+                    <a class="btn-carrito" href="#"> Agregar a carrito</a>
+                </div>  
+            </div>
+            <div class="producto">
+                <img src="img/producto6.jpg" alt="Imagen Producto"/>
+                <div class="texto-producto">
+                    <h3>Producto 6</h3>
+                    <p>parrafo de el producto </p>
+                    <p class="precio">$10000</p>
+                    <a class="btn-carrito" href="#"> Agregar a carrito</a>
+                </div>  
+            </div>
         </div>
     </main>
 
-    <footer>
-        <p>Todos los derechos reservados a Sidney Sahonero Garrado</p>
+    <footer class="site-footer">
+        <div class="grid-footer contenedor">
+            <div>
+                <h3>Categorías</h3>
+                <nav class="footer-menu">
+                    <a href="#">Cocina</a>
+                    <a href="#">Oficina</a>
+                    <a href="#">Jardín</a>
+                    <a href="#">Cochera</a>
+                    <a href="#">Dormitorios</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Sobre Nosotros</h3>
+                <nav class="footer-menu"> <!--grupo de enlaces-->
+                    <a href="#">Nuestra Historia</a>
+                    <a href="#">Mision, vision y valores</a>
+                    <a href="#">Carreras</a>
+                    <a href="#">Politicas de privacidad</a>
+                    <a href="#">Terminos de servicio</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Soporte</h3>
+                <nav class="footer-menu"> <!--grupo de enlaces-->
+                    <a href="#">Nuestra Historia</a>
+                    <a href="#">Mision, vision y valores</a>
+                    <a href="#">Carreras</a>
+                    <a href="#">Politicas de privacidad</a>
+                    <a href="#">Terminos de servicio</a>
+                </nav>
+            </div>
+        </div>
+        <p class="copyright">Todos los derechos reservados a Sidney Sahonero Garrado</p>
     </footer>
 </body>
 </html>
